@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MuiTypography } from './components/MUITypography'
 import { MuiButton } from './components/MUIButton'
+import { MuiTextField } from './components/MUITextField'
 import { Stack } from '@mui/material'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Stack spacing={25}>
       <MuiTypography></MuiTypography>
       <MuiButton></MuiButton>
+      <MuiTextField />
     </Stack>
   )
 }
