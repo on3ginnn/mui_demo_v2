@@ -8,16 +8,18 @@ import { MuiTextField } from './components/MUITextField';
 import { MuiSelect } from './components/MUISelect';
 import { Stack } from '@mui/material';
 import { Container } from '@mui/material';
+import { MuiRadioButton } from './components/MUIRadioButton';
 
 function App() {
 
   return (
     <Container maxWidth='lg'>
-      <Stack spacing={25}>
+      <Stack spacing={15}>
         <MuiTypography></MuiTypography>
         <MuiButton></MuiButton>
         <MuiTextField />
         <MuiSelect />
+        <MuiRadioButton />
       </Stack>
     </Container>
 
