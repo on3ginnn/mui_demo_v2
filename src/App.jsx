@@ -9,6 +9,7 @@ import { MuiSelect } from './components/MUISelect';
 import { Stack } from '@mui/material';
 import { Container } from '@mui/material';
 import { MuiRadioButton } from './components/MUIRadioButton';
+import { MuiCheckBox } from './components/MuiCheckBox';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <MuiTextField />
         <MuiSelect />
         <MuiRadioButton />
+        <MuiCheckBox />
       </Stack>
     </Container>
 
