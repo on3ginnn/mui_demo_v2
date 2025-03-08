@@ -10,6 +10,9 @@ import { Stack } from '@mui/material';
 import { Container } from '@mui/material';
 import { MuiRadioButton } from './components/MUIRadioButton';
 import { MuiCheckBox } from './components/MuiCheckBox';
+import { MuiSwitch } from './components/MUISwitch';
+import { MuiRating } from './components/MUIRating';
+import { MuiAutocomplete } from './components/MUIAutocomplete';
 
 function App() {
 
@@ -22,6 +25,9 @@ function App() {
         <MuiSelect />
         <MuiRadioButton />
         <MuiCheckBox />
+        <MuiSwitch />
+        <MuiRating />
+        <MuiAutocomplete />
       </Stack>
     </Container>
 

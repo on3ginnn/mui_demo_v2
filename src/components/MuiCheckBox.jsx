@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, FormControlLabel, Checkbox, FormControl, FormLabel, FormGroup } from "@mui/material"
+import { Box, Stack, Typography, FormControlLabel, Checkbox, FormControl, FormLabel, FormGroup, FormHelperText } from "@mui/material"
 import { useState } from "react";
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -24,21 +24,21 @@ export const MuiCheckBox = () => {
             <Typography variant="h3">Checkbox</Typography>
             <Box>
                 <Box>
-                    <FormControlLabel onChange={handleChange} label="I accept term and conditions" control={<Checkbox checked={accept} />}/>
+                    <FormControlLabel onChange={handleChange} label="I accept term and conditions" control={<Checkbox size="small" color="secondary" checked={accept} />}/>
                 </Box>
             </Box>
             <Box>
                 <Checkbox icon={<BookmarkBorderIcon />} checkedIcon={<BookmarkIcon />} checked={accept} onChange={handleChange} />
             </Box>
             <Box>
-                <FormControl>
+                <FormControl error={!skills.length} color="secondary">
                     <FormLabel>Skills</FormLabel>
-                    <FormGroup onChange={handleSkillsChange}>
+                    <FormGroup onChange={handleSkillsChange} row>
                         <FormControlLabel 
                             // onChange={handleChange} 
                             label="HTML"
                             value='html'
-                            control={<Checkbox checked={skills.includes('html')} />}
+                            control={<Checkbox size="small" checked={skills.includes('html')} />}
                         />
                         <FormControlLabel 
                             // onChange={handleChange} 
@@ -54,6 +54,7 @@ export const MuiCheckBox = () => {
                         />
 
                     </FormGroup>
+                    <FormHelperText>Required any selection</FormHelperText>
                 </FormControl>
             </Box>
         </Stack>
